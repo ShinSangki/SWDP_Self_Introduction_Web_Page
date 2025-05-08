@@ -3,44 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>자기소개 메인</title>
     <style>
         body {
             margin: 0px;
         }
         .container {
-            background-color: beige;
+            background-color: black;
         }
         .headBar {
             background-color: tomato;
             height: 40px;
             border: 1px solid black;
+            display: flex;
         }
+        .simboll {
+            width: 40px;
+            height: 40px;
+            background-color: blueviolet;
+        }
+        .topTitle {
+            height: 40px;
+            flex-grow: 1;
+        }
+
         .mainItems {
             background-color: skyblue;
-            height: 300px;
             display: flex;
             flex-direction: row;
         }
-        .mitem {
-            border: 1px solid black;
-        }
         .leftBar {
             background-color: lightgreen;
-            width: 60px;
-            height: 300px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: 270px;
         }
         .middlePage {
             background-color: gold;
-            flex-grow: 2;
-            height: 300px;
+            flex-grow: 1;
+            flex-shrink: 2;
+            height: 270px;
         }
-        .rightBar {
-            background-color: lightpink;
-            width: 40px;
-            height: 300px;
-        }
-
         .footBar {
             height: 50px;
             border: 1px solid black;
@@ -50,14 +53,16 @@
 <body>
     <div class="container">
         <div class="headBar">
-            제목 및 나의 심볼 로고
+            <div class="simboll"></div>
+            <div class="topTitle">Let me introduce myself.</div>
         </div>
         <div class="mainItems">
-            <div class="mitem leftBar">나의 프로필 <br> 퀵바</div>
-            <div class="mitem middlePage">메인 이야기</div>
-            <div class="mitem rightBar">사이드바바</div>
+            <div class="mitem leftBar">나의 프로필</div>
+            <div class="mitem middlePage">바로가기 및 기본 디자인</div>
         </div>
-        <div class="footBar"></div>
+        <div class="footBar">
+            이메일 주소 및 연락처, 소속속
+        </div>
     </div>
 </body>
 </html>
